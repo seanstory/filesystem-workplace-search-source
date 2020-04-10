@@ -11,7 +11,7 @@ After building, move the tarball from `filesystem-workplace-search-source-dist/t
 install your source, and simple untar the tarball.
 
 ### Configuration
-You must configure your Content Source Key and Access token in `config/source.yaml`. You may also optionally
+You must configure your Content Source Key, Access token, and filesystem root directory in `config/source.yaml`. You may also optionally
 provide a pattern that can be used to filter which files are processed during your crawl.
 
 ### Usage
