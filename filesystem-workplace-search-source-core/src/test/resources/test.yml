@@ -1,0 +1,13 @@
+# Provide an Access Token (found in the Workplace Search UI)
+access_token: 3a423c597442eddb09baad64793ff342fc0aa6da357f5227888d44b3386cf722
+
+# Provide a Content Source Key (found in the Workplace Search UI)
+content_source_key: 5e8f5266f74c321dae6e5548
+
+# (Optional) Provide an endpoint at which to hit the Workplace Search API
+# Default: http://localhost:3002/api/ws/v1/
+# endpoint: http://<hostname>:<port>/api/ws/v1
+
+# (Optional) Provide constructor arguments for your defined Sources
+#helloworld:
+#  - "Hola, mundo!"
