@@ -31,7 +31,7 @@ class SyncTest extends Specification {
         setup:
         def yamlPath = "src/test/resources/test.yml"
         def contentSourceKey = "5e8f5266f74c321dae6e5548"
-        def sourceName = "helloworld"
+        def sourceName = "filesystem"
 
         def req = HttpRequest.request().withMethod("POST").withPath("/api/ws/v1/sources/${contentSourceKey}/documents/bulk_create.json")
         def res = HttpResponse.response().withStatusCode(200).withBody('{"very":"nice"}').withHeaders(new Header("Content-Type", "application/json; charset=utf-8"))

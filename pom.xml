@@ -4,7 +4,7 @@
 
     <groupId>com.sstory.workplace.search.source.filesystem</groupId>
     <artifactId>filesystem-workplace-search-source</artifactId>
-    <name>Workplace Search Example Custom Source :: Parent</name>
+    <name>Workplace Search FileSystem Custom Source :: Parent</name>
     <packaging>pom</packaging>
     <version>0.1.0-SNAPSHOT</version>
 
@@ -14,6 +14,7 @@
         <slf4j.version>1.7.25</slf4j.version>
         <logback.version>1.2.3</logback.version>
         <workplace.java.api.version>7.8.0-SNAPSHOT</workplace.java.api.version>
+        <tika.version>1.24</tika.version>
 
         <!-- Testing -->
         <spock.version>1.0-groovy-2.4</spock.version>
@@ -63,6 +64,56 @@
                 <groupId>com.sstory.workplace.search</groupId>
                 <artifactId>workplace-search-sdk</artifactId>
                 <version>${workplace.java.api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tika</groupId>
+                <artifactId>tika-core</artifactId>
+                <version>${tika.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>commons-logging</artifactId>
+                        <groupId>commons-logging</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tika</groupId>
+                <artifactId>tika-parsers</artifactId>
+                <version>${tika.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>commons-logging</artifactId>
+                        <groupId>commons-logging</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>c3p0</artifactId>
+                        <groupId>c3p0</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.httpcomponents</groupId>
+                        <artifactId>httpclient</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.httpcomponents</groupId>
+                        <artifactId>httpcore</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.cxf</groupId>
+                        <artifactId>cxf-rt-rs-client</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>edu.usc.ir</groupId>
+                        <artifactId>sentiment-analysis-parser</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.commons</groupId>
+                        <artifactId>commons-csv</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.glassfish.jaxb</groupId>
+                        <artifactId>jaxb-runtime</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <!-- test dependencies -->
@@ -168,10 +219,13 @@
                     </execution>
                     <!-- Re-add them here so they run AFTER the kotlin compilation -->
                     <execution>
-                        <id>java-compile</id>
+                        <id>java-groovy-compile</id>
                         <goals>
                             <goal>compile</goal>
                         </goals>
+                        <configuration>
+                            <compilerId>groovy-eclipse-compiler</compilerId>
+                        </configuration>
                     </execution>
                     <execution>
                         <id>java-groovy-testCompile</id>

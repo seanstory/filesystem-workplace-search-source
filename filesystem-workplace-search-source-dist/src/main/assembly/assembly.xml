@@ -26,6 +26,7 @@
         <fileSet>
             <directory>${project.basedir}/src/main/bin</directory>
             <outputDirectory>${parent.build.finalName}/bin</outputDirectory>
+            <fileMode>777</fileMode>
         </fileSet>
         <fileSet>
             <directory>${project.basedir}/src/main/config</directory>

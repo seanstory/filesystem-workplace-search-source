@@ -8,6 +8,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>filesystem-workplace-search-source-core</artifactId>
+    <name>Workplace Search FileSystem Custom Source :: Core</name>
+
 
     <dependencies>
         <dependency>
@@ -41,6 +43,14 @@
         <dependency>
             <groupId>com.sstory.workplace.search</groupId>
             <artifactId>workplace-search-sdk</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-parsers</artifactId>
         </dependency>
 
         <!-- test dependencies -->

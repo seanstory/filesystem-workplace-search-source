@@ -7,6 +7,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <name>Workplace Search FileSystem Custom Source :: Dist</name>
     <artifactId>filesystem-workplace-search-source-dist</artifactId>
     <packaging>pom</packaging>
 

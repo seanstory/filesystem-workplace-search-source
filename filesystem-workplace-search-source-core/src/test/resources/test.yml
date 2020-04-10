@@ -8,6 +8,6 @@ content_source_key: 5e8f5266f74c321dae6e5548
 # Default: http://localhost:3002/api/ws/v1/
 # endpoint: http://<hostname>:<port>/api/ws/v1
 
-# (Optional) Provide constructor arguments for your defined Sources
-#helloworld:
-#  - "Hola, mundo!"
+filesystem:
+  - "src/test/resources/data"
+#  - ".*" # (Optional) Provide a pattern to filter files by
