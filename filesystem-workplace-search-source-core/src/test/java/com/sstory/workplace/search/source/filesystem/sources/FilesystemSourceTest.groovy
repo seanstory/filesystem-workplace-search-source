@@ -12,7 +12,7 @@ class FilesystemSourceTest extends Specification {
 
         when:
         List<FileDocument> output = source.getDocuments().collect()
-        println JsonOutput.prettyPrint(JsonOutput.toJson(output.collect{it.toMap()}))
+//        println JsonOutput.prettyPrint(JsonOutput.toJson(output.collect{it.toMap()}))
 
         then:
         output.size() == 7
