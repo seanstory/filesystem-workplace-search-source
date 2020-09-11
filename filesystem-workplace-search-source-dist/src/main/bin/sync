@@ -4,7 +4,7 @@ set -e
 SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 CLASSPATH="${SCRIPTPATH}/../lib/*"
-MAIN="com.sstory.workplace.search.sdk.run.Sync"
+MAIN="Sync"
 CONFIG_DIR="${SCRIPTPATH}/../config"
 CONFIG="${CONFIG_DIR}/source.yml"
 JAVA_OPTS="-Dlogback.configurationFile=${CONFIG_DIR}/logback.groovy"

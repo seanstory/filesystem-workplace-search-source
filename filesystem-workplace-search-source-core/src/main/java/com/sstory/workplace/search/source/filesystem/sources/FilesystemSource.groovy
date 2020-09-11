@@ -1,7 +1,7 @@
 package com.sstory.workplace.search.source.filesystem.sources
 
-import com.sstory.workplace.search.sdk.api.Source
-import com.sstory.workplace.search.sdk.api.Yielder
+import com.seanjstory.workplace.search.sdk.api.Source
+import com.seanjstory.workplace.search.sdk.api.Yielder
 import com.sstory.workplace.search.source.filesystem.document.FileDocument
 import com.sstory.workplace.search.source.filesystem.utils.TikaResult
 import com.sstory.workplace.search.source.filesystem.utils.TikaTransformer

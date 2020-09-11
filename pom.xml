@@ -56,12 +56,12 @@
                 <version>${kotlin.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sstory.workplace.search</groupId>
+                <groupId>com.seanjstory.workplace.search</groupId>
                 <artifactId>workplace-search-client</artifactId>
                 <version>${workplace.java.api.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sstory.workplace.search</groupId>
+                <groupId>com.seanjstory.workplace.search</groupId>
                 <artifactId>workplace-search-sdk</artifactId>
                 <version>${workplace.java.api.version}</version>
             </dependency>

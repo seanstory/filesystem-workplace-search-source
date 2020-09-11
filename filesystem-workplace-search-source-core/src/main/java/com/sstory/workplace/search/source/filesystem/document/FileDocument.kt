@@ -1,6 +1,6 @@
 package com.sstory.workplace.search.source.filesystem.document
 
-import com.sstory.workplace.search.sdk.api.DocumentBase
+import com.seanjstory.workplace.search.sdk.api.DocumentBase
 import com.sstory.workplace.search.source.filesystem.utils.TikaResult
 import java.io.File
 import java.nio.file.Files

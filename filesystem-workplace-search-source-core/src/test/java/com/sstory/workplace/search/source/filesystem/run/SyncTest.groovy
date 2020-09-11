@@ -1,6 +1,6 @@
 package com.sstory.workplace.search.source.filesystem.run;
 
-import com.sstory.workplace.search.sdk.run.Sync
+import com.seanjstory.workplace.search.sdk.run.Sync
 import org.junit.Rule
 import org.junit.contrib.java.lang.system.ExpectedSystemExit
 import org.junit.contrib.java.lang.system.internal.CheckExitCalled
