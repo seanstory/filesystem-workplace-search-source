@@ -1,3 +1,4 @@
+![](https://travis-ci.org/seanstory/filesystem-workplace-search-source.svg?branch=master&status=passed)
 # Filesystem Custom API Source - for Elastic Workplace Search
 A Custom API Source implementation for Elastic Workplace Search that crawls a filesystem for content.
 
